@@ -1,0 +1,20 @@
+[package]
+name = "riag"
+version = "0.1.0"
+authors = ["Fraser Li <mail.fraserli@gmail.com>"]
+edition = "2021"
+description = "A chess engine"
+repository = "https://github.com/fraserli/riag"
+license = "MIT OR Apache-2.0"
+keywords = ["chess"]
+
+[dependencies]
+bitflags = "2.4.1"
+chumsky = "1.0.0-alpha.6"
+owo-colors = "3.5.0"
+strum = { version = "0.25.0", features = ["derive"] }
+thiserror = "1.0.50"
+
+[[bin]]
+name = "riag"
+path = "src/bin/riag.rs"
